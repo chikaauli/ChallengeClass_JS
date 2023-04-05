@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Class</title>
+</head>
+<style>
+    .myStyle {
+        background-color: grey;
+        padding: 16px;
+    }
+</style>
+
+<body>
+    <!--============== section 2 =================== -->
+    <!-- contoh 1 : getElementById -->
+    <p>Ubah text menggunakan getElementById</p>
+    <p id="ubah"></p>
+
+    <!-- contoh 2 : getElementByName -->
+    <p>Mengetahui jumlah element menggunakan getElementByName</p>
+    Budi:
+    <input type="checkbox" name="orang" value="budi">
+    Noval:
+    <input type="checkbox" name="orang" value="noval">
+    <p>jumlah checkbox:</p>
+    <p id="sum"></p>
+
+    <!-- contoh 3 : Query Selector-->
+    <p>Menambahkan warna background pada elemen</p>
+    <h4 class="warna">Chika Aulia</h4>
+
+
+    <!-- ================= Section 3 ================= -->
+    <!-- Contoh 1 : Get the parent element-->
+    <p>Mengambil node name dari parent element pada tag li</p>
+
+    <ul>
+        <li id="myLI">Coffee</li>
+        <li>Tea</li>
+    </ul>
+
+    <p>Start your day with a cup of coffe and Tea!</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="drink"></p>
+
+    <!-- Contoh 2 : get child elements -->
+    <p>Mengambil tag name dari body</p>
+    <p id="body"></p>
+
+    <!-- Contoh 3 : get slibligs of an element -->
+    <ul>
+        <li id="item1">Coffee (first item)</li>
+        <li id="item2">Tea (second item)</li>
+    </ul>
+
+    <p>Melihat item dari daftar berikutnya</p>
+    <p id="item"></p>
+
+
+
+
+    <!-- ================== Section 4 ============== -->
+    <!-- Contoh 1 : InnerHTML -->
+    <p>Menambahkan Text menggunakan innerHTML</p>
+    <p id="tambah"></p>
+
+    <!-- Contoh 2 : RemoveChild -->
+    <button onclick="hapus()">hapus nama</button>
+    <ul id="list">
+        <li>Gunawan</li>
+        <li>Nopal</li>
+        <li>Azka</li>
+    </ul>
+
+
+
+
+    <!-- ================= Section 5 =================== -->
+    <!-- Contoh 1 : getAttribute -->
+    <h1 id="mine" class="mineclass">Object</h1>
+    <p>Nilai Atribut class dari elemen h1 adalah</p>
+
+    <p id="your"></p>
+
+    <!-- Contoh 2 : removeAttribute  -->
+    <a id="myWebsite" href="https://personalweb-chika.netlify.app/">My Website</a>
+
+    <p id="personal">Click tombol dibawah untuk menghapus atribute a href.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+
+
+
+    <!-- ================= Section 6 ================== -->
+    <!-- Contoh 1 : style property -->
+    <h1 id="object">Menggunakan Style</h1>
+    <h2>Tanpa Style</h2>
+
+    <!-- Contoh 2 : classList property -->
+    <h2>Menambahkan background</h2>
+
+    <button onclick="muncul()">Add</button>
+    <p>klik add untuk memunculkan background</p>
+
+    <div id="mybackground">
+        <p>Disini akan muncul background</p>
+    </div>
+
+
+
+
+    <!-- ================ Section 7 =================== -->
+    <!-- Contoh 1 : Handling Event -->
+    <button onclick="jam()">Waktu sekarang!</button>
+    <p id="waktu"></p>
+
+    <!-- Contoh 2 : Custom Events -->
+    <h1>Hai Ganteng!</h1>
+    <h1>How was your day?</h1>
+    <button id="btn_baik" onclick="alert('Hopefully always fine yah!^^')"><b>Mau</b></button>
+    <button id="btn_tidak" onclick="tidak(this)" style="position: relative;"><b>Tidak baik</b></button>
+
+
+
+
+    <!-- =============== Section 8 ================== -->
+    <!-- Contoh 1 : add/remove options -->
+    <form>
+        Pilih nama yang akan di apus:
+        <br>
+        <select id="myfriend" size="4">
+            <option>Arni</option>
+            <option>Rizky</option>
+            <option>Syauqi</option>
+            <option>Jamal</option>
+        </select>
+    </form>
+    <br>
+
+    <button onclick="apus()">apus nama</button>
+    <!-- Contoh 2 : Handling change events -->
+    <p>Pilih nama-nama mobile :</p>
+
+    <select id="myMobil" onchange="mobile()">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Volvo">Volvo</option>
+    </select>
+
+    <p>Ketika kamu memilih mobile baru, fungsi akan mentrigger value dari output mobil yang dipilih.</p>
+
+    <p id="mobil"></p>
+
+</body>
+<script src="script.js"></script>
+
+</html>
