@@ -1,4 +1,4 @@
-##JAVASCRIPT-DOM
+### JAVASCRIPT-DOM
 
 ##Section 2 - Selecting elements
 1. `getElementById` untuk mengubah text bedasarkan id nya
