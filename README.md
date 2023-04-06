@@ -23,9 +23,11 @@
 2. `properti classList` Untuk memanipulasi kelas CSS dari suatu element
 
 ##Section 7 - Working with Events
+
 1.`Handling events` untuk menampilkan sebuah elemen waktu secara realtime
 2.`Custom Events` untuk menentukan javascript khusus dan lampiran ke elemen
 
 ##Section 8 - Scripting Web Forms
+
 1. `Add / Remove Options` untuk menambahkan opsi secara dinamis dan menghapus opsi dari kontak pilih
 2.`Handling change event` untuk memunculkan value dari output yang dipilih 
